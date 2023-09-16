@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-node_modules
-out
-=======
 # Logs
 logs
 *.log
@@ -31,4 +27,7 @@ npm-debug.log.*
 *.css.d.ts
 *.sass.d.ts
 *.scss.d.ts
->>>>>>> 83b826f (chore: bump deps (#3530))
+
+# eslint ignores hidden directories by default:
+# https://github.com/eslint/eslint/issues/8429
+!.erb
