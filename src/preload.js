@@ -1,1 +1,0 @@
-const image = require('./art/block.png')

@@ -9,7 +9,7 @@ const createWindow = () => {
       webPreferences: {
         preload: path.join(__dirname, 'preload.js'),
         nodeIntegration: true,
-        nodeIntegrationInWorker: true,
+        nodeIntegrationInWorker: true
       },
       icon: path.join(__dirname, 'art/icon.png'),
       resizable: false

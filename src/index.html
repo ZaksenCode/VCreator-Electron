@@ -4,34 +4,60 @@
     <meta charset="UTF-8">
     <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/fonts.css">
   </head>
   <body>
     <div class="main">
         <div class="sidebar">
             <div class="sidebar-content">
                 <img class="sidebar-img" src="art/icon.png" alt="icon">
-                <button class="img-button browse-button">
-                    <img class="btn-in-img" scr="art/folder.png" alt="browse">
+                <button class="img-button browse-button" onclick="">
+                    <img class="btn-in-img" src="art/folder.png" alt="browse">
                 </button>
                 <button class="img-button block-button">
-                    <img class="btn-in-img" scr="art/block.png" alt="block">
+                    <img class="btn-in-img" src="art/block.png" alt="block">
                 </button>
                 <button class="img-button script-button">
-                    <img class="btn-in-img" scr="art/script.png" alt="script">
+                    <img class="btn-in-img" src="art/script.png" alt="script">
                 </button>
             </div>
         </div>
         <div class="content">
-            <div class="content-project">
-
+            <div class="content-project" id="content-project">
+                <div class="page-name">
+                    Project
+                </div>
+                <div class="project-inner">
+                    <div class="project-data">
+                        <div class="project-vesrion">
+                            Версия: 0
+                        </div>
+                        <div class="project-author">
+                            Автор: none
+                        </div>
+                        <div class="project-description">
+                            Описание: none
+                        </div>
+                    </div>
+                    <button class="project-load-btn">
+                        <div class="project-load-btn-text">
+                            Загрука контент пака
+                        </div>
+                    </button>
+                </div>
             </div>
-            <div class="content-block">
-
+            <div class="content-block hide" id="content-block">
+                <div class="page-name">
+                    Редактор блоков
+                </div>
             </div>
-            <div class="content-script">
-                
+            <div class="content-script hide" id="content-script">
+                <div class="page-name">
+                    Редактор скриптов
+                </div>
             </div>
         </div>
     </div>
+    <script src="scripts/pages.js"></script>
   </body>
 </html>
